@@ -3,7 +3,8 @@
 <details>
  <summary>
 1. ANÁLISIS DEL PROBLEMA </summary>  
-<p>  1.1 Descripción del problema
+<p>  <b>1.1 Descripción del problema</b> 
+ 
   El problema consiste en hacer una clasificación de los súbitos (comercientes,artesanos y nobles) en base a las monedas de oro anuales que cada uno gana para poder saber cuánto tributo deben aportar a la corona. Es por esto que se decidieron dividir de la siguiente manera:
   - Los ingresos menores a 10000 monedas de oro no pagarán tributo.
   - Los que ganen más de 10000 pero menos de 50000 monedas de oro deberán pagar el 10% del excedente sobre 10000 monedas.
@@ -17,9 +18,9 @@ Las entradas y salidas del ejercicio son dos, las primera y única es el ingreso
 
 El proceso a realizar es según el valor de entrada en el sistema, este debe sacar el porcentaje asignado por el rey y dependiendo el caso mirar por medio de comparaciones y restas el excedente sobre la cantidad de monedas base de cada caso para poder sacar el valor del tributo.
 
-1.2 Justificación de la solución
+<b>1.2 Justificación de la solución</b>
 
-1.3 Diagrama UML
+<b>1.3 Diagrama UML</b>
 ![Diagrama de flujo]
 (/Almacenamiento interno/Download/TRIBUTOS AL REY.png)
 </p>
