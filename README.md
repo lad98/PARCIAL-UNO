@@ -23,3 +23,22 @@ El proceso a realizar es según el valor de entrada en el sistema, este debe sac
 
 </p>
 </details>
+<details>
+ <summary>
+2. DOCUMENTACIÓN DEL CÓDIGO </summary>  
+<p> <b>1. Python </b>
+ <b> 2.C++ </b>
+ <h2> En todos los sistemas operativos </h2>
+ <ul>
+ <li> Se abre un editor de textos</li>
+ Para todos los sistemas sirve Visual Studio Code, si no en Windows editor de notas, en Mac TextEdit y en Linux Gedit.
+ <li> Se guarda el archivo </li>
+  Se guarda con la extensión "nombre_del_archivo".cpp
+  
+  
+  
+ </ul>
+ 
+ 
+</p>
+</details>
