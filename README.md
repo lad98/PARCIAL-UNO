@@ -8,6 +8,25 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
   - Los que ganen más de 500000 monedas pagarán un 10% de diezmo sobre las primeras 40000 monedas extras y si sobrepasan este tope pagarán el 20% de tributo sobre sus ingresos.
 <details>
  <summary>
+1. INSTALACIÓN </summary>  
+<p> <b>1. Python </b>
+ <b> 2.C++ </b>
+ <h2> En todos los sistemas operativos </h2>
+ <ul>
+ <li> Se abre un editor de textos</li>
+ Para todos los sistemas sirve Visual Studio Code, que se instala buscandolo en el navegador preferido.
+ <li> Se guarda el archivo </li>
+  Se guarda con la extensión "nombre_del_archivo".cpp
+  <li> Se instala el compilador</li>
+  -<b>Windows</b> 
+
+ </ul>
+ 
+ 
+</p>
+</details>
+<details>
+ <summary>
 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
  
@@ -26,22 +45,4 @@ El proceso a realizar es según el valor de entrada en el sistema, este debe sac
 
 </p>
 </details>
-<details>
- <summary>
-2. DOCUMENTACIÓN DEL CÓDIGO </summary>  
-<p> <b>1. Python </b>
- <b> 2.C++ </b>
- <h2> En todos los sistemas operativos </h2>
- <ul>
- <li> Se abre un editor de textos</li>
- Para todos los sistemas sirve Visual Studio Code, si no en Windows editor de notas, en Mac TextEdit y en Linux Gedit.
- <li> Se guarda el archivo </li>
-  Se guarda con la extensión "nombre_del_archivo".cpp
-  
-  
-  
- </ul>
- 
- 
-</p>
-</details>
+
