@@ -10,17 +10,50 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
  <summary>
 1. INSTALACIÓN </summary>  
 <p> <b>1. Python </b>
- <b> 2.C++ </b>
- <h2> En todos los sistemas operativos </h2>
- <ul>
- <li> Se abre un editor de textos</li>
+  
+ <b> 2.C++ </b>  
+ En todos los sistemas operativos
+ - Se abre un editor de textos</li>
  Para todos los sistemas sirve Visual Studio Code, que se instala buscandolo en el navegador preferido.
- <li> Se guarda el archivo </li>
+  1. En Visual Studio Code, se abre el VS Code
+  2. Seleccione el ícono de la vista Extensiones en la barra de Actividad o utilice el atajo de teclado ( Ctrl+Shift+X ).
+  3. Buscar 'C++'
+  4. Seleccione Instalar
+- Se guarda el archivo 
   Se guarda con la extensión "nombre_del_archivo".cpp
-  <li> Se instala el compilador</li>
-  -<b>Windows</b> 
+- Se instala el compilador
+**Windows**
+  Descargue usando este enlace directo al instalador de MinGW 
+1. Ejecute el instalador y siga los pasos del asistente de instalación. Tenga en cuenta que MSYS2 requiere Windows 8.1 de 64 bits o una versión más reciente.
 
- </ul>
+2. En el asistente, elija la carpeta de instalación que desee. Registre este directorio para más adelante. En la mayoría de los casos, el directorio recomendado es aceptable. Lo mismo se aplica cuando llega al paso de configuración de accesos directos del menú de inicio. Cuando haya terminado, asegúrese de que la casilla Ejecutar MSYS2 ahora esté marcada y seleccione Finalizar . Se abrirá automáticamente una ventana de terminal MSYS2.
+
+3. En esta terminal, instale la cadena de herramientas MinGW-w64 ejecutando el siguiente comando:
+
+- pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+Copiar
+4. Se mostrará una lista de paquetes disponibles.
+-Instalador MYSS2
+5. Acepte el número predeterminado de paquetes en el "toolchain" grupo presionando Enter .
+Ingrese "Y" cuando se le pregunte si desea continuar con la instalación.
+6. Agregue la ruta de su bincarpeta MinGW-w64 a la "PATH" variable de entorno de Windows siguiendo estos pasos:
+7. En la barra de búsqueda de Windows, escriba "Configuración" para abrir la Configuración de Windows.
+Busque Editar variables de entorno para su cuenta .
+En "user variables", seleccione la "Path" variable y luego seleccione Editar .
+8. Seleccione "New" y agregue a la lista la carpeta de destino MinGW-w64 que registró durante el proceso de instalación. Si seleccionó los pasos de instalación predeterminados, la ruta es: C:\msys64\ucrt64\bin.
+9. Seleccione "Aceptar" y, a continuación, seleccione "Aceptar" nuevamente en la ventana "Variables" de entorno "PATH" para actualizar la variable de entorno.
+10. Debe volver a abrir todas las ventanas de la consola para que la
+  -"PATH" variable de entorno actualizada esté disponible.
+Verifique que sus herramientas MinGW-w64 estén correctamente instaladas y disponibles, abra un nuevo Prompt del sistema y escriba:
+gcc --version
+
+g++ --version
+
+gdb --version
+
+**MacOS**
+
+ 
  
  
 </p>
