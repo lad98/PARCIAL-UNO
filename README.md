@@ -1,14 +1,17 @@
 # PARCIAL-UNO
 **Laura Daniela Jiménez y Juan Felipe Amador**
+## INTRODUCCIÓN
+Uno de los obejtivos de la programación es automatizar y resolver problemas que generalmente se necesita mucho tiempo, y la programación busca optimizar todo este tipo de situaciones, a continuación se va a resolver el sguiente caso.
+El problema consiste en hacer una clasificación de los súbitos (comercientes,artesanos y nobles) en base a las monedas de oro anuales que cada uno gana para poder saber cuánto tributo deben aportar a la corona. Es por esto que se decidieron dividir de la siguiente manera:
+  - Los ingresos menores a 10000 monedas de oro no pagarán tributo.
+  - Los que ganen más de 10000 pero menos de 50000 monedas de oro deberán pagar el 10% del excedente sobre 10000 monedas.
+  - Los que ganen más de 500000 monedas pagarán un 10% de diezmo sobre las primeras 40000 monedas extras y si sobrepasan este tope pagarán el 20% de tributo sobre sus ingresos.
 <details>
  <summary>
 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
  
-  El problema consiste en hacer una clasificación de los súbitos (comercientes,artesanos y nobles) en base a las monedas de oro anuales que cada uno gana para poder saber cuánto tributo deben aportar a la corona. Es por esto que se decidieron dividir de la siguiente manera:
-  - Los ingresos menores a 10000 monedas de oro no pagarán tributo.
-  - Los que ganen más de 10000 pero menos de 50000 monedas de oro deberán pagar el 10% del excedente sobre 10000 monedas.
-  - Los que ganen más de 500000 monedas pagarán un 10% de diezmo sobre las primeras 40000 monedas extras y si sobrepasan este tope pagarán el 20% de tributo sobre sus ingresos.
+  
 
 Los requisitos psrs que el código cumpla con las condiciones dadas, es que cada variable tiene que ser entera, se necesita trabajar con el modelo estándar tanto de Python como de C++, para que se puedan trabajar los bloques de comparación, las operaciones aritméticas, las estructuras de selección y loops, aparte de esto se necesita un compilador o acceso a internet para realizar y ejecutar el código.
 
