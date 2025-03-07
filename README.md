@@ -6,12 +6,12 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
   - Los ingresos menores a 10000 monedas de oro no pagarán tributo.
   - Los que ganen más de 10000 pero menos de 50000 monedas de oro deberán pagar el 10% del excedente sobre 10000 monedas.
   - Los que ganen más de 500000 monedas pagarán un 10% de diezmo sobre las primeras 40000 monedas extras y si sobrepasan este tope pagarán el 20% de tributo sobre sus ingresos.
+### C++
 <details>
  <summary>
-1. INSTALACIÓN </summary>  
-<p> <b>1. Python </b>
-  
- <b> 2.C++ </b>  
+
+1.INSTALACIÓN </summary>  
+<p> 
  En todos los sistemas operativos
  - Se abre un editor de textos</li>
  Para todos los sistemas sirve Visual Studio Code, que se instala buscandolo en el navegador preferido.
@@ -56,6 +56,28 @@ gdb --version
  
  
  
+</p>
+</details>
+<details>
+ <summary>2.GUÍA DE USO</summary>  
+<p> Se puede interactuar con el por medio de Visual Studio Code con los pasos anteriormente descritos,C++ es un lenguaje de programación compilado, multiparadigma, de tipo imperativo lo que significa que se conoce n cada paso del programa su estado, y esto se da por el valor de las variables usadas, aparte que se puede altearar el programa a través de diversas sentencias, este tiene una programación genérica y funcional.
+Algunos ejemplos de uso son:
+  -Calculadora aritmética de enteros
+  -Simulación de la multiplicación entera hardware
+  -Cálculo de la raíz cuadrada mediante el método de bisección
+  -Mínimo de un vector de enteros
+  -Invertir el orden de los elementos de un vector
+  -Insertar un valor o un vector en otro vector manteniendo intacto el original
+<b>Descripción general de las API de C/C++</b>
+  Las API son mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones y protocolos.Las API de C++ son:
+  API de C++ de Clinfo: Permite obtener información de estado sobre un clúster de PowerHA SystemMirror for AIX. 
+API de C/C++ de IBM: Permite acceder a los recursos de IBM i. 
+API de Helix C/C++: Permite crear aplicaciones que interactúen con Helix Core Server. 
+API de C++ del programa de arranque: Permite llamar a la API de programa de arranque. 
+API de C++ de Unreal Engine: Permite explorar las clases y funciones de Engine. 
+API C++ moderna de RTI Connext: Permite distribuir datos críticos en tiempo real entre dispositivos o nodos. 
+API de C++ de PyTorch: Amplía la clase ATen Tensor con capacidades relacionadas con la diferenciación automática. 
+
 </p>
 </details>
 <details>
