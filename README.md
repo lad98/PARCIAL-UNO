@@ -22,6 +22,6 @@ El proceso a realizar es según el valor de entrada en el sistema, este debe sac
 
 <b>1.3 Diagrama UML</b>
 ![Diagrama de flujo]
-(/Almacenamiento interno/Download/TRIBUTOS AL REY.png)
+(TRIBUTOS AL REY.png)
 </p>
 </details>
