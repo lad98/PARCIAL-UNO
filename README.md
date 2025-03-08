@@ -6,32 +6,39 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
   - Los ingresos menores a 10000 monedas de oro no pagarán tributo.
   - Los que ganen más de 10000 pero menos de 50000 monedas de oro deberán pagar el 10% del excedente sobre 10000 monedas.
   - Los que ganen más de 500000 monedas pagarán un 10% de diezmo sobre las primeras 40000 monedas extras y si sobrepasan este tope pagarán el 20% de tributo sobre sus ingresos.
-### C++
+### C++ 
 <details>
  <summary>
 
 1.INSTALACIÓN </summary>  
 <p> 
  En todos los sistemas operativos
+  
  - Se abre un editor de textos</li>
  Para todos los sistemas sirve Visual Studio Code, que se instala buscandolo en el navegador preferido.
-  1. En Visual Studio Code, se abre el VS Code
+ 
+ 1. En Visual Studio Code, se abre el VS Code
+ 
   2. Seleccione el ícono de la vista Extensiones en la barra de Actividad o utilice el atajo de teclado ( Ctrl+Shift+X ).
+    
   3. Buscar 'C++'
+     
   4. Seleccione Instalar
-- Se guarda el archivo 
-  Se guarda con la extensión "nombre_del_archivo".cpp
+     
+- Se guarda el archivo
+  
+-Se guarda con la extensión "nombre_del_archivo".cpp
+  
 - Se instala el compilador
-**Windows**
-  Descargue usando este enlace directo al instalador de MinGW 
-1. Ejecute el instalador y siga los pasos del asistente de instalación. Tenga en cuenta que MSYS2 requiere Windows 8.1 de 64 bits o una versión más reciente.
+
+<b>Windows</b>
+1. Descargue usando este enlace directo al instalador de MinGW 
+Ejecute el instalador y siga los pasos del asistente de instalación. Tenga en cuenta que MSYS2 requiere Windows 8.1 de 64 bits o una versión más reciente.
 
 2. En el asistente, elija la carpeta de instalación que desee. Registre este directorio para más adelante. En la mayoría de los casos, el directorio recomendado es aceptable. Lo mismo se aplica cuando llega al paso de configuración de accesos directos del menú de inicio. Cuando haya terminado, asegúrese de que la casilla Ejecutar MSYS2 ahora esté marcada y seleccione Finalizar . Se abrirá automáticamente una ventana de terminal MSYS2.
 
 3. En esta terminal, instale la cadena de herramientas MinGW-w64 ejecutando el siguiente comando:
-
 - pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
-Copiar
 4. Se mostrará una lista de paquetes disponibles.
 -Instalador MYSS2
 5. Acepte el número predeterminado de paquetes en el "toolchain" grupo presionando Enter .
@@ -62,26 +69,120 @@ gdb --version
  <summary>2.GUÍA DE USO</summary>  
 <p> Se puede interactuar con el por medio de Visual Studio Code con los pasos anteriormente descritos,C++ es un lenguaje de programación compilado, multiparadigma, de tipo imperativo lo que significa que se conoce n cada paso del programa su estado, y esto se da por el valor de las variables usadas, aparte que se puede altearar el programa a través de diversas sentencias, este tiene una programación genérica y funcional.
 Algunos ejemplos de uso son:
-  -Calculadora aritmética de enteros
-  -Simulación de la multiplicación entera hardware
-  -Cálculo de la raíz cuadrada mediante el método de bisección
-  -Mínimo de un vector de enteros
-  -Invertir el orden de los elementos de un vector
-  -Insertar un valor o un vector en otro vector manteniendo intacto el original
+  
+  - Calculadora aritmética de enteros
+  
+  - Simulación de la multiplicación entera hardware
+  
+  - Cálculo de la raíz cuadrada mediante el método de bisección
+  
+  - Mínimo de un vector de enteros
+  
+  - Invertir el orden de los elementos de un vector
+  
+  - Insertar un valor o un vector en otro vector manteniendo intacto el original
+  
 <b>Descripción general de las API de C/C++</b>
+
   Las API son mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones y protocolos.Las API de C++ son:
-  API de C++ de Clinfo: Permite obtener información de estado sobre un clúster de PowerHA SystemMirror for AIX. 
-API de C/C++ de IBM: Permite acceder a los recursos de IBM i. 
-API de Helix C/C++: Permite crear aplicaciones que interactúen con Helix Core Server. 
-API de C++ del programa de arranque: Permite llamar a la API de programa de arranque. 
-API de C++ de Unreal Engine: Permite explorar las clases y funciones de Engine. 
-API C++ moderna de RTI Connext: Permite distribuir datos críticos en tiempo real entre dispositivos o nodos. 
-API de C++ de PyTorch: Amplía la clase ATen Tensor con capacidades relacionadas con la diferenciación automática. 
+  
+ -API de C++ de Clinfo: Permite obtener información de estado sobre un clúster de PowerHA SystemMirror for AIX. 
+
+ - API de C/C++ de IBM: Permite acceder a los recursos de IBM i. 
+
+ - API de Helix C/C++: Permite crear aplicaciones que interactúen con Helix Core Server. 
+
+ - API de C++ del programa de arranque: Permite llamar a la API de programa de arranque. 
+
+ - API de C++ de Unreal Engine: Permite explorar las clases y funciones de Engine. 
+
+ - API C++ moderna de RTI Connext: Permite distribuir datos críticos en tiempo real entre dispositivos o nodos. 
+
+ - API de C++ de PyTorch: Amplía la clase ATen Tensor con capacidades relacionadas con la diferenciación automática. 
 
 </p>
 </details>
 <details>
  <summary>
+<details>
+ <summary> 3.DOCUMENTACIÓN TÉCNICA </summary>  
+<p> <b>IOSTREAM</b>
+  
+C++ proporciona estos recursos básicos a través de la biblioteca de entrada/salida iostream. Esta biblioteca forma parte de la biblioteca estándar de C++.
+
+Para informar al compilador de que deseamos utilizar alguna de las funcionalidades de la biblioteca iostream, es necesario incluir su archivo de cabecera (header file) asociado, típicamente al principio del archivo:
+
+#include <iostream>
+
+  <b>Variables</b>
+  
+  Los diferentes valores que puede tomar una variable (enteros, reales, caracteres ) que puede manejar un lenguaje se agrupan en tipos. 
+  
+- bool: para representar valores booleanos, es decir, cierto o falso.
+- int: para representar valores enteros.
+- double: para valores reales.
+- float: para valores reales con pripridad a la parte decimal.
+- char: para caracteres.
+- string: para cadenas de caracteres.
+<b>Variables globales </b>
+Son las variables que son conocidas por todo el código
+Ej: std::cin (entrada) y std::cout (salida)
+<b>Variables locales</b>
+Las variables locales son accesibles desde su declaración hasta el final del bloque de código del bloque en el que han sido declaradas.
+Los bloques se determinan por {...}
+<b>Operadores y sentencias</b>
+
+Un operador es un símbolo que determina la operación a realizar sobre los operandos (variables) a los que afecta de alguna manera. Algunos de ellos son:
+- suma (+)
+- resta (-)
+- multiplicación (*)
+- división (/)
+- modulo (%)
+Una sentencia es un conjunto de expresiones que permiten ejecutar una determinada acción. Alguna de ellas son:
+- y (&&)
+- o (||)
+- no (!) 
+- igual (==)
+- mayor (<)
+- menor (>)
+  
+<b>Operadores incremento y decremento</b>
+
+Son operadores unarios, es decir, actúan sobre un único operando:
+
+- ++x: operador preincremento, cuando precede al operando
+
+- x++: operador postincremento, cuando sucede al operando
+
+- --x: operador predecremento, cuando precede al operando
+
+- x--: operador postdecremento, cuando sucede al operando
+  
+<b>Estructuras condicionales</b>
+
+Una sentencia condicional realiza un conjunto u otro de sentencias dependiendo del cumplimiento o no de una determinada condición.
+
+En C++ podemos distinguir diferentes tipos:
+
+- Simple: if
+- Ampliada: if - else
+- Anidada: if – else if - … - else
+- Multisalida: switch
+
+<b>Estructuras iterativas</b>
+
+Las sentencias repetitivas o iterativas permiten repetir una secuencia de instrucciones en tanto no deje de cumplirse una condición.
+En C++ disponemos de tres variantes de bucles:
+
+- Bucle: while
+  Un bucle while tiene asociado un bloque de sentencias que se ejecutarán secuencialmente mientras la condición de entrada al bucle sea cierta.
+- Bucle: do - while
+  Un bucle do - while la evalúa al final del bucle, lo implica que el bucle se ejecutará al menos una vez
+- Bucle: for está concebido fundamentalmente para ejecutar sus sentencias asociadas un número fijo de veces.
+  
+</p>
+</details>
+
 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
  
