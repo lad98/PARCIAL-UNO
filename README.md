@@ -151,11 +151,8 @@ Una sentencia es un conjunto de expresiones que permiten ejecutar una determinad
 Son operadores unarios, es decir, actúan sobre un único operando:
 
 - ++x: operador preincremento, cuando precede al operando
-
 - x++: operador postincremento, cuando sucede al operando
-
 - --x: operador predecremento, cuando precede al operando
-
 - x--: operador postdecremento, cuando sucede al operando
   
 <b>Estructuras condicionales</b>
