@@ -8,9 +8,7 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
   - Los que ganen más de 500000 monedas pagarán un 10% de diezmo sobre las primeras 40000 monedas extras y si sobrepasan este tope pagarán el 20% de tributo sobre sus ingresos.
 ### C++ 
 <details>
- <summary>
-
-1.INSTALACIÓN </summary>  
+ <summary>1.INSTALACIÓN </summary>  
 <p> 
  En todos los sistemas operativos
   
