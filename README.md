@@ -177,8 +177,7 @@ En C++ disponemos de tres variantes de bucles:
   
 </p>
 </details>
-<summary>
-1. ANÁLISIS DEL PROBLEMA </summary>  
+<summary> 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
 
 Los requisitos psrs que el código cumpla con las condiciones dadas, es que cada variable tiene que ser entera, se necesita trabajar con el modelo estándar tanto de Python como de C++, para que se puedan trabajar los bloques de comparación, las operaciones aritméticas, las estructuras de selección y loops, aparte de esto se necesita un compilador o acceso a internet para realizar y ejecutar el código.
