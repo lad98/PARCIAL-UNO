@@ -177,6 +177,7 @@ En C++ disponemos de tres variantes de bucles:
   
 </p>
 </details>
+<details>
 <summary> 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
 
