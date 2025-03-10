@@ -422,6 +422,11 @@ std ::cin >> c;
   </p>
   </details>
   <details>
+<summary> 6. CONTRIBUCIONES </summary>  
+	  
+<p> Las demás personas pueden comentar mejores maneras de solcucionar el problema cambiando alguna operación haciendo qeu el código pueda ser mas óptimo.</p>
+  </details>
+### PYTHON
 <summary> 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
 
