@@ -603,6 +603,41 @@ std ::cin >> c;
   </details>
 <h3>PYTHON</h3>
 <details>
+<summary> 1. INSTALACIÓN </summary> 
+<p> <b> Windows </b>
 
+1. Descargar Python desde el sitio web con la versión más reciente o la que se adapte mejor a su sistema operativo 
+2. Descargar Visual Studio Code
+3. Descargar las funciones de Python en visual studio 
+4. Abrir una carpeta donde se van a guardar los códigos en Python 
+5. Abrir Visual Studio y seleccionar la carpeta creada 
+6. En la carpeta crear un archivo que tenga la extensión “.py”, por ejemplo codigo.py 
+7. Escribir el código 
+8. Clickear en Run para ejecutar el código y después presionar en Inicio Depurado
+9. Finalmente en la terminal (cmd) debe digitar los valores que sean necesarios para el funcionamiento del código 
+10. Se mostrará el resultado final.
+
+
+<b>MacOS</b>
+
+1. Abrir la terminal 
+2. Revisar si Python está instalado usando el comando                “python3 –version”
+3. Crear una carpeta donde se vayan a guardar los códigos 
+4. Crear un archivo que tenga la extensión “.py” para que funcione correctamente 
+5. Escribir el código 
+5. Ejecutar el código con el comando python código.py
+O también con python3 código.py
+6. Se mostrará el resultado 
+<b>Linux </b>
+
+1. Abrir la terminal 
+2. Revisar si Python se encuentra instalado con el comando       “python3 –version”
+3. Crear una carpeta para guardar los códigos 
+4. Crear un archivo que termine en “.py”
+5. Escribir el código en el archivo 
+6. Correr el programa con el comando python código.py o con el comando python3 código.py
+
+ </p>
+</details>
 
 
