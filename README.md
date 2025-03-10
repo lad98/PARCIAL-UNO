@@ -426,7 +426,8 @@ std ::cin >> c;
 	  
 <p> Las demás personas pueden comentar mejores maneras de solcucionar el problema cambiando alguna operación haciendo qeu el código pueda ser mas óptimo.</p>
   </details>
-### PYTHON
+<h3>PYTHON</h3>
+<details>
 <summary> 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
 
