@@ -336,7 +336,92 @@ int main ()
 ```
 </p>
 </details>
-<details>
+  <details>
+<summary> 5. ERRORES COMUNES </summary>
+<p> 
+- <b>Falta  ; o falta de {...} </b>
+  
+   ```cpp
+#include <iostream>
+#include <string>
+float a;
+float b // NO SE CERRO CON PUNTO Y COMA
+int main()
+{
+	printf("\nDigame cual es el precio base del articulo\n");
+	std::cin>>a;
+	printf("\nDigame cual es el descuento que tiene el articulo\n");
+	std::cin>>b;
+printf("\nEl valor final del articulo es\n");
+b*=a;
+b/=100;
+a-=b;
+std::cout <<a;
+
+	return 0;
+// NO se cerro el int main con corchete
+```
+- <b>No romper la estructura switch con break </b>
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int a;
+int main ()
+{
+cout << "Deme un número";
+cin >> a;
+switch (a) {
+case 1:
+cout << "El número es uno";
+// No se puso el break;
+case 2:
+cout << "El número es dos";
+defaul:
+cout << "El número es << a ;
+}
+}
+```
+- <b> Poner valores de entrada difrenets a los de la variable declarada </b>
+```cpp
+#include <iostream>
+#include <string>
+int a;
+float b;
+bool c;
+int main ()
+{
+std:: cout << "Deme un número entero";
+std:: cin >> c;
+// Aqui hay un error puesto que la variable c se declaro como booleanos se tendria que guardar en a
+```
+- <b> No declarar en using namespace std y no esoecificarlo línea por línea </b>
+```cpp
+#include <iostream>
+#include <string>
+// Aqui no se declaró el using namespace std;
+int a;
+bool c;
+int main ()
+{
+cout << "Deme un número entero"; //Antes de "cout" falta especificar el std::
+std ::cin >> c;
+```
+Cabe recalcar que si se usa uno no se usa el otro
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int a;
+bool c;
+int main ()
+{
+std ::cout << "Deme un número entero"; //Antes se declaro el espacio que se va a utilizar por esto esta línea es repetitiva
+std ::cin >> c;
+```
+  </p>
+  </details>
+  <details>
 <summary> 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
 
