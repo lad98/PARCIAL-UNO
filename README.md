@@ -73,6 +73,7 @@ Se opto por la cadena de IF puesto que es una herramienta versatil que nos permi
 
 </p>
 </details>
+<h1>DOCUMENTACIÓN </h1>
 <h2>C++ </h2>
 <details>
  <summary>1.INSTALACIÓN </summary>  
