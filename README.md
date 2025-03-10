@@ -51,6 +51,8 @@ El loop "While"que se usa para verificar la información ingresada y evitar que 
 La condicional “if” se usa para separar un grupo de valores de otros, en este caso la condicional evalúa únicamente los valores menores o iguales a 10.000.
 La condicional “elif” evalúa únicamente los casos donde el valor es mayor a 10.000 y menor a 50.000.
 Por último la condicional “else” evalúa todos los demás casos, siendo este apoyados por if anidados.
+Sistema de redondeo: Ya que no se pueden pagar monedas en decimales, el “int(round)” cumple la función de que el sistema solo imprima valores enteros y no se vaya por los decimales.
+
 
 <b> 1.4 Comparación con posibles soluciones alternativas y razones de la elección final. </b>
 
@@ -642,7 +644,21 @@ O también con python3 código.py
 </details>
 <details>
 <summary>2. GUÍA DE USO	</summary>
-<p>	
+	
+<p>	Python es un lenguaje de programación de alto nivel y de código abierto, lo que significa que cualquiera puede usarlo y modificar su código fuente.
+	
+También es un lenguaje diseñado para ser multiplataforma, es decir, que funciona en los distintos sistemas operativos (Windows, macOS, Linux). Además es un lenguaje interpretado, lo que significa que se puede escribir linea por linea sin necesidad de compilar.
+
+Se puede interactuar con Python mediante softwares como Visual Studio u otro tipo de aplicaciones que ejecuten este lenguaje o por compiladores de Python disponibles en distintos sitios web.
+
+Ejemplos de uso:
+
+- Calculadora básica
+- Conversor de unidades (temperatura, longitud, peso, etc)
+- Generador de caracteres (se puede usar para contraseñas, nombres de usuario, etc)
+- Desarrollo de videojuegos
+- Simulador de eventos (lanzamiento de dado, moneda)
+
 </p>
 </details>
 <details>
