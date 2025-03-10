@@ -176,6 +176,11 @@ En C++ disponemos de tres variantes de bucles:
 </p>
 </details>
 <details>
+<summary> EJEMPLOS DE CÓDIGO</summary>  
+<p>
+</p>
+</details>
+<details>
 <summary> 1. ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
 
@@ -192,4 +197,5 @@ El proceso a realizar es según el valor de entrada en el sistema, este debe sac
 
 </p>
 </details>
+
 
