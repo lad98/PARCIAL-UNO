@@ -660,6 +660,7 @@ O también con python3 código.py
     print (y)
 ```
 <b> Ejemplo 2: </b> Aqui se ve el uso de el condicional if y aparte el uso de operadores lógicos y aritméticos.
+
 ```python
 N= int(input("Dame un número: "))
 x=N%3
@@ -669,7 +670,9 @@ if x==0 and y==7 :
 else :
   print(f"El número {N} no es curioso")
 ```
+
 <b> Ejemplo 3: </b> Aqui se ve el uso de el condicional if dentro de un ciclo while para analizar que el valor ingresado a la variable sea el correcto y también cuenta el uso de operadores lógicos y aritméticos.
+
 ```python
 from posixpath import extsep
 print("Buenas")
@@ -692,7 +695,9 @@ elif a == "si":
 <details>
 <summary>5. ERRORES COMUNES</summary>
 <p> - No especificar el tipo de variable que se requiera para un ejercicio, puesto que python toma todo como un string.
-	```python
+	
+```python
+
 #Antes del input debe ir encerrandolo en parentésis un int, float, bool...
     x= input("Dame un número: ") #Si la persona ingresa por error otro caractare como "hi" el sistema tratara de hacer la operación.
     y = x + 5
@@ -720,11 +725,12 @@ elif a == "si":
     print("Bienvenido")
 ```
 - No poner == para en el momento de comparar variables o constantes, puesto que si solo se pone uno el sistema compara bits y no los valores.
-	```python
+
+```python
 	a=si
 	if not a = "si": #Como no hay dos = el resulatdo va a cambiar.
     print("Tiene que inscribirse")
-elif a == "si":
+        elif a == "si":
     print("Bienvenido")
 ```
 </p>
