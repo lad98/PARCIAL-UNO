@@ -10,8 +10,8 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
 <details>
  <summary>1.INSTALACIÓN </summary>  
 <p> 
- En todos los sistemas operativos
-  
+ <b>Windows</b>
+ 
  - Se abre un editor de textos</li>
  Para todos los sistemas sirve Visual Studio Code, que se instala buscandolo en el navegador preferido.
  
@@ -29,7 +29,6 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
   
 - Se instala el compilador
 
-<b>Windows</b>
 1. Descargue usando este enlace directo al instalador de MinGW 
 Ejecute el instalador y siga los pasos del asistente de instalación. Tenga en cuenta que MSYS2 requiere Windows 8.1 de 64 bits o una versión más reciente.
 
@@ -57,9 +56,126 @@ g++ --version
 gdb --version
 
 **MacOS**
+Para mayor comodidad configuraremos el inicio del programa por medio del comando “code, para ello primero abriremos VS Code y usaremos el siguiente conjunto de teclas (Cmd+Shift+P) con la finalidad de abrir la paleta de comandos, y por último escribiremos “Shell Command: Install ‘code’ Command in PATH” y seleccionar la opción que te sale en la lista (al finalizar este proceso se pedirá la contraseña de administrador por seguridad).
+
+Para confirmar la instalación del comando code, abriremos la terminal y escribiremos el siguiente comando
+
+“code --version”
+
+Llegando a ver la versión de VS Code instalada 
+
+Para poder usar C++ en MacOS por medio de VS Code necesitaremos instalar las extensiones necesarias, para esto descargaremos Xcode por medio del siguiente comando
+
+
+“xcode-select -install”
+
+
+siendo necesario por tener el compilador de C, una vez descargado el programa abriremos la terminal y escribiremos lo siguiente
+
+
+
+“xcode-select -install”
+
+
+
+Una vez hecho esto deberá aparecer en la terminal lo siguiente
+
+Apple clang version 11.0.3 (clang-1103.0.32.59)
+Target: x86_64-apple-darwin20.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+
+Para confirmer la correcta instalación de Xcode usaremos el código “clang --version” teniendo que aparecer la misma información que nos brindaron anteriormente (para MacOS, el compilador “g++” lo interpreta como “Clang ++”, lo que explica el uso de este último comando)
+
+
+Luego abriremos VS Code y descargaremos los complementos 
 
  
- 
+“C/C++ (Microsoft)”, “C/C++ Extension Pack (Microsoft)”, “C/C++ Compiler (danielpinto8zz6)”
+
+
+Esta descarga se hará mediante el VS Code buscando la extensión “C/C++” y la instalaremos, siendo que, finalmente el programa estará listo para ser utilizado, una vez terminado el código deseado, lo guardaremos como un archivo “.cpp”, para compilar el archivo creado activaremos desde VS Code la terminal integrada al mismo, esto se hará con la combinación de teclas (Ctrl+ la tecla del acento grave, la que generalmente esta a la izquierda del 1), una vez abierta la terminal usaremos el siguiente código 
+
+“g++ Archivo.cpp -Wall -std=c++20”
+
+Este codigo generara un archivo “.out” que podremos encontrar en el gestor de archivos, ya por último escribiremos en la terminal 
+
+“./Archivo.out”
+
+Donde esta será el enrutamiento del archivo “.out”, ejecutándose el código hecho previamente.
+
+**Linux**
+Para poder usar visual code estudio en Linux, primero se necesita descargar la extensión y librerías de este, la instalación de estos repositorios cambia según la versión de linux que se maneje teniendo como principales las siguientes dos:
+
+- Ubuntu/Debian: para la instalación en debian se debe ir a la página web (https://code.visualstudio.com/) y descargar la extensión “.deb”, luego de eso se abrirá la consola y se ejecutara el siguiente comando 
+
+“sudo apt install <ruta del .deb>” 
+
+El cual instalará el programa mediante la previa instalación del extensible proveniente del navegador web.
+Luego se escribirá en la consola
+
+“echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections”
+
+Lo cual descargará automáticamente los repositorios necesarios para la aplicación, en caso de querer descargarlos manualmente se utilizará el siguiente comando para instalarlos
+
+“sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+rm -f packages.microsoft.gpg”
+
+una vez finalizado este proceso se deben actualizar los repositorios en caso de alguna                    incompatibilidad, esto mediante el siguiente comando
+“sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code # or code-insiders”
+
+Lo cual terminara la instalación completa del programa y el posible uso inmediato de este.
+
+Distribuciones con gestor de paquetes RPM:  para este tipo de distribuciones se debe abrir la consola y escribir lo siguiente:
+“sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" |sudo tee /etc/zypp/repos.d/vscode.repo > /dev/null”
+
+Este comando permite ver la ruta que tomara la consola para instalar los paquetes y librerías   necesarias para ejecutar Visual Studio Code, luego de eso se escribirá en la consola
+“sudo zypper install code”
+Lo cual terminara con la instalación del programa, siendo posible ejecutarlo una vez terminada la instalación.
+
+¿Cómo compilar en Linux?
+Para poder compilar VS code (Visual Studio code) en Linux, primero debemos ejecutar el programa y seleccionar las extensiones, mediante la combinación de teclas (Ctrl+Shift+X) luego se buscará C++ y se instalará la respectiva extensión, una vez instalada se usará el compilador g++ para escribir el código deseado. Para ello abriremos la consola y escribiremos 
+
+“gcc -v”
+En caso de no tener instalado el compilador necesitado, lo podemos instalar desde la consola mediante el siguiente comando
+
+“sudo apt-get update”
+
+El cual actualizara todos los paquetes requeridos o instalados en y por el sistema, después instalaremos compiladores GNU mediante
+
+“sudo apt-get install build-essential gdb”
+Este proceso sirve en distribuciones derivadas de Ubuntu/Debian, en caso de utilizar distribuciones RPM como OpenSuse se utilizarán los siguientes comandos serán utilizados para la instalación de los compiladores.
+
+- (Actualización del sistema):
+
+“sudo zypper refresco
+actualización de sudo zypper”
+
+- (Habilitar los repositorios OSS para la correcta instalación de g++)
+
+“sudo zypper addrepo http://descargar.opensuse.org/distribución/salto/15.6/repo/oss/ oss”
+
+- (Buscar los paquetes GCC disponibles)
+
+“zypper buscar gcc”
+
+- (instalar los paquetes GCC)
+
+“sudo zypper instalar gcc”
+
+- (instalar los paquetes gcc-c++, estos solo son necesarios para la compilación de programas en C++)
+
+“sudo zypper instalar gcc-c++”
+
+Ya instalado todo lo necesario para programar mediante VS code con el lenguaje C++ y una vez terminado el código que se requiera se deberá guardar el mismo con la extensión “.cpp” ya hecho esto en el propio programa se seleccionara el botón “run C/C++ file” ubicado en la flecha ubicada en la esquina superior derecha de la pantalla junto a los iconos de cerrar y minimizar, por último escogeremos “g++ build and debug active file” en la lista de los compiladores detectados que nos muestre, ya una vez se termine este proceso se ejecutara el código realizado (no será necesario realizar estos últimos dos pasos cada vez que se abra el programa, esto solo es aplicable por cada código realizado).
+
  
 </p>
 </details>
