@@ -61,6 +61,7 @@ Hay múltiples soluciones para este ejercicio, las cuales son:
 - Función: La función “def” normalmente se usa cuando el usuario va a insertar una lista de valores, mientras que en este ejercicio no es necesario insertar múltiples valores.
 
 - Match case: La función match case no suele ser recomendada en cuanto a evaluar rangos de valores, es más útil cuando se evalúan valores exactos.
+Se opto por la cadena de IF puesto que es una herramienta versatil que nos permitia solucionar el problema, aparte que es una función que se conoce el método de implementación.
 
 </p>
 </details>
