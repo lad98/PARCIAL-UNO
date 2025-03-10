@@ -667,7 +667,52 @@ Ejemplos de uso:
 </details>
 <details>
 <summary>3. DOCUMENTACIÓN TÉCNICA</summary>
-<p>	
+	
+<p>	Es un lenguaje interpretado, no compilado, usa tipado dinámico, fuertemente tipado. Es multiplataforma, lo cual es ventajoso para hacer ejecutable su código fuente entre varios sistema operativos.
+	
+- **Variables:** Las variables son espacios de memoria donde se almacenan datos. A las variables se les asigna un valor ya sea numérico o textual de la siguiente manera. (x = 25) o (color: negro)
+	
+- **Operadores aritméticos:** Los operadores aritméticos están hechos para resolver operaciones matemáticas dentro de Python, un ejemplo de uso es (25 + 40) y como resultado el programa mostraría 65.
+
+- **Operadores de comparación:** Los operadores de comparación son (=, >, <, !) y sirven para poner en punto de comparación dos variables, por ejemplo (x= 10) y (y = 3), si se tienen estas variables podemos decir que x>y, y<x, x !=y.
+También existen los comparadores True y False, los cuales sirven para determinar si una premisa es verdadera o falsa, por ejemplo si decimos que x<y, el comparador correcto sería false, y si decimos que x!=y el comparador adecuado sería true.
+
+-  **Operadores lógicos:** Los operadores lógicos son (and, or y not), sirven para asociar 2 premisas, variables o datos, por ejemplo si decimos que x<y and y>x el programa nos devolvería false. Si decimos que x<y or y<x el sistema devolvería true, ya que uno de ellos si es verdadero. Por último si decimos que not(x>y) el sistema devolverá false ya que not se encarga de devolver el operador opuesto.
+  
+- **Condicionales:** Las condicionales son:  (if, elif y else) if se ejecuta si la condición es verdadera, por ejemplo:
+```python
+if (x>y):
+print “Verdadero”
+```
+el sistema imprimirá verdadero ya que x si es mayor que y.
+La condicional elif se usa si la primera condición es falsa pero se quiere comprobar otra condición, por ejemplo si decimos que: 
+```python
+if (y>x) :
+print “Verdadero”
+elif (y<x): print “Segunda”
+```
+El sistema imprimirá la palabra “Segunda”, ya que y es menor que x. Por último la condicional else se usa cuando ninguna de las condiciones es verdadera, por ejemplo si decimos que:   
+```python
+if (y>x):
+print “Verdadero”
+elif (x<y):
+print “Segunda” 
+else: 
+print “Falso”
+```
+el sistema imprimirá “falso”, ya que ninguna condición es verdadera.
+  
+- **Bucles:** Los bucles son (for y while), for se usa para recorrer una lista o secuencia en el programa, por ejemplo si decimos que 
+```python
+números = (1,2,3,4,5)
+for numero in números
+print (numero)
+```
+La salida serían los números 1,2,3,4,5 ya que el for lo que hace es que para cada número que se encuentre dentro de el conjunto (números) imprimirá ese mismo número
+
+El bucle (while) sirve para repetir algo mientras una condición sea verdadera, por ejemplo: 
+
+  
 </p>
 </details>
 <details>
