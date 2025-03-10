@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>   
 int S;
 int main(){
 std::cout << "Ingrese el total de sus ingresos : ";
@@ -16,16 +17,16 @@ while (S<0) {
  }
 else {
     if(10001>= S || S<50000) { 
-        S=S - 10000 ;
-        S=S/10;
+        S= S - 10000 ;
+        S=round(S/10);
         std::cout<< "El valor a pagar es : "<<S<<" monedas de oro";
         } 
     if(S>=50000) {
         if (S<90000){
-            S=S/10;
+            S=round(S/10);
             std::cout<< "El valor a pagar es : "<<S<<" monedas de oro";
         }else {
-            S=(S*2)/10;
+            S=round((S*2)/10);
             std::cout<< "El valor a pagar es : "<<S<<" monedas de oro";
         }
     }
