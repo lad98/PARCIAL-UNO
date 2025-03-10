@@ -6,6 +6,7 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
   - Los ingresos menores a 10000 monedas de oro no pagarán tributo.
   - Los que ganen más de 10000 pero menos de 50000 monedas de oro deberán pagar el 10% del excedente sobre 10000 monedas.
   - Los que ganen más de 500000 monedas pagarán un 10% de diezmo sobre las primeras 40000 monedas extras y si sobrepasan este tope pagarán el 20% de tributo sobre sus ingresos.
+## INFORME ESCRITO
 <details>
 <summary> ANÁLISIS DEL PROBLEMA </summary>  
 <p>  <b>1.1 Descripción del problema</b> 
