@@ -69,7 +69,7 @@ Hay múltiples soluciones para este ejercicio, las cuales son:
 - Match case: La función match case no suele ser recomendada en cuanto a evaluar rangos de valores, es más útil cuando se evalúan valores exactos.
 Se opto por la cadena de IF puesto que es una herramienta versatil que nos permitia solucionar el problema, aparte que es una función que se conoce el método de implementación.
 
-**NOTA: El diagram de flujo se encuentra subido en el repositorio en forma de imagen, se llama Diagrama UML.**
+**NOTA: El diagrama de flujo se encuentra subido en el repositorio en forma de imagen, se llama Diagrama UML.**
 
 </p>
 </details>
