@@ -6,7 +6,64 @@ El problema consiste en hacer una clasificación de los súbitos (comercientes,a
   - Los ingresos menores a 10000 monedas de oro no pagarán tributo.
   - Los que ganen más de 10000 pero menos de 50000 monedas de oro deberán pagar el 10% del excedente sobre 10000 monedas.
   - Los que ganen más de 500000 monedas pagarán un 10% de diezmo sobre las primeras 40000 monedas extras y si sobrepasan este tope pagarán el 20% de tributo sobre sus ingresos.
-### C++ 
+<details>
+<summary> ANÁLISIS DEL PROBLEMA </summary>  
+<p>  <b>1.1 Descripción del problema</b> 
+
+Los requisitos psrs que el código cumpla con las condiciones dadas, es que cada variable tiene que ser entera, se necesita trabajar con el modelo estándar tanto de Python como de C++, para que se puedan trabajar los bloques de comparación, las operaciones aritméticas, las estructuras de selección y loops, aparte de esto se necesita un compilador o acceso a internet para realizar y ejecutar el código.
+
+Los bloques de comparación se usan para poder establecer condiciones por medio de comparativos viendo si es mayor, menor o igual (con sus conbinaciones), las operaciones aritméticas se usan para cambiar el valor de una variable según un proceso de operaciones necesarias, por su parte las estructuras de selección se usan para que el sistema haga ciertos procesos dependiendo de alguna condición incial y por último se usan los loops para realizar tareas indefinidamente hasta que se cumpla alguna condición y se termine.
+
+Las entradas y salidas del ejercicio son dos, las primera y única es el ingreso de súbdito (respresentado en monedas de oro), la salida del programa es el valor del tributo a pagar con dos decimales (representado en monedas de oro).
+
+El proceso a realizar es según el valor de entrada en el sistema, este debe sacar el porcentaje asignado por el rey y dependiendo el caso mirar por medio de comparaciones y restas el excedente sobre la cantidad de monedas base de cada caso para poder sacar el valor del tributo.
+
+<b>1.2 Justificación de la solución</b>
+
+Primero, el problema se divide en 3 partes:
+
+1.2.1 Las personas que ganan 10.000 monedas de oro o menos: No pagan tributo
+
+1.2.2 Las personas que ganan 10.001 monedas de oro hasta 50.000: Pagan un 10% del exceso de 10.000 monedas, es decir, si una persona gana 40.000 se le restan 10.000 monedas y se le cobra un 10% de sus 30.000 monedas restantes.
+1.2.3 Las personas que ganan más de 50.000 monedas: Pagan un 10% de sus primeras 40.000 monedas, y pagan un 20% de sus ganancias restantes.
+Siguiente paso: Usar condicionales (if, elif y else) para separar cada una de las partes del problema:
+- El “if” se usa para separar a las personas que ganen 10.000 monedas o menos
+- En python la condicional “elif” se usa para separar a las personas que ganan 10.001 monedas de oro a 50.000
+- Y la condicional “else” se usa para separar a las personas que ganan más de 50.000 monedas de oro.
+- Aparte se utilizó un ciclo WHILE para asegurar que el resultado ingresado sea el correcto.
+
+Después se hacen los cálculos necesarios dependiendo de las monedas de oro que ingrese el usuario.
+
+- Si el usuario ingresa un valor menor a 10.001 prácticamente no hay cálculo, el sistema solo imprime que el valor a pagar es de 0.
+- Si el usuario ingresa un valor entre 10.001 a 50.000, se restan 10.000 monedas al valor total y al resultado de la resta se le multiplica por 0.10
+- Si el usuario ingresa un valor mayor a 50.000, las primeras 40.000 monedas se multiplican por 0.10, es decir para los valores entre 50.000 y 90.000 monedas
+- Si supera este tope el valor del diezmo será del 20% sobre sus ingresos.
+Finalmente se da el resultado final de las monedas de oro a pagar.
+
+<b> 1.3 Justificación de las estructuras de datos y algoritmos seleccionados.</b>
+
+La estructura de datos “int” es para evaluar valores enteros, y se usa ya que las monedas se miden únicamente por enteros (no existe ¼ de moneda por ejemplo)
+
+Condicionales
+
+El loop "While"que se usa para verificar la información ingresada y evitar que el sistematermine si el valor no es correcto.
+La condicional “if” se usa para separar un grupo de valores de otros, en este caso la condicional evalúa únicamente los valores menores o iguales a 10.000.
+La condicional “elif” evalúa únicamente los casos donde el valor es mayor a 10.000 y menor a 50.000.
+Por último la condicional “else” evalúa todos los demás casos, siendo este apoyados por if anidados.
+
+<b> 1.4 Comparación con posibles soluciones alternativas y razones de la elección final. </b>
+
+Hay múltiples soluciones para este ejercicio, las cuales son:
+
+- Cadena de If: Normalmente se usan muchas condicionales if cuando más de un caso puede ser verdadero, pero en el caso de este problema, solo puede ser verdadera una de las 3 opciones por lo que es más recomendable usar if, elif y else.
+
+- Función: La función “def” normalmente se usa cuando el usuario va a insertar una lista de valores, mientras que en este ejercicio no es necesario insertar múltiples valores.
+
+- Match case: La función match case no suele ser recomendada en cuanto a evaluar rangos de valores, es más útil cuando se evalúan valores exactos.
+
+</p>
+</details>
+<h2>C++ </h2>
 <details>
  <summary>1.INSTALACIÓN </summary>  
 <p> 
@@ -544,21 +601,6 @@ std ::cin >> c;
   </details>
 <h3>PYTHON</h3>
 <details>
-<summary> 1. ANÁLISIS DEL PROBLEMA </summary>  
-<p>  <b>1.1 Descripción del problema</b> 
 
-Los requisitos psrs que el código cumpla con las condiciones dadas, es que cada variable tiene que ser entera, se necesita trabajar con el modelo estándar tanto de Python como de C++, para que se puedan trabajar los bloques de comparación, las operaciones aritméticas, las estructuras de selección y loops, aparte de esto se necesita un compilador o acceso a internet para realizar y ejecutar el código.
-
-Los bloques de comparación se usan para poder establecer condiciones por medio de comparativos viendo si es mayor, menor o igual (con sus conbinaciones), las operaciones aritméticas se usan para cambiar el valor de una variable según un proceso de operaciones necesarias, por su parte las estructuras de selección se usan para que el sistema haga ciertos procesos dependiendo de alguna condición incial y por último se usan los loops para realizar tareas indefinidamente hasta que se cumpla alguna condición y se termine.
-
-Las entradas y salidas del ejercicio son dos, las primera y única es el ingreso de súbdito (respresentado en monedas de oro), la salida del programa es el valor del tributo a pagar con dos decimales (representado en monedas de oro).
-
-El proceso a realizar es según el valor de entrada en el sistema, este debe sacar el porcentaje asignado por el rey y dependiendo el caso mirar por medio de comparaciones y restas el excedente sobre la cantidad de monedas base de cada caso para poder sacar el valor del tributo.
-
-<b>1.2 Justificación de la solución</b>
-
-
-</p>
-</details>
 
 
