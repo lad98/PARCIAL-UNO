@@ -691,7 +691,42 @@ elif a == "si":
 </details>
 <details>
 <summary>5. ERRORES COMUNES</summary>
-<p> 	
+<p> - No especificar el tipo de variable que se requiera para un ejercicio, puesto que python toma todo como un string.
+	```python
+#Antes del input debe ir encerrandolo en parentésis un int, float, bool...
+    x= input("Dame un número: ") #Si la persona ingresa por error otro caractare como "hi" el sistema tratara de hacer la operación.
+    y = x + 5
+    print (y)
+```
+- No poner el espaciado correspondiente para separar los bloques de código.
+```python
+from posixpath import extsep
+print("Buenas")
+while True:
+try: #El try no tiene espaciado por lo tanto al ejecutar, no se entendera a que bloque pertenece esa instrucción
+        a = input("Usted cuenta con una cuenta de Netflix, responda si o no :")
+if a != "si" and a != "no": #El if no tiene espaciado por lo tanto al ejecutar, no se entendera que esta dentro del while y si leerá como un código aparte.
+            raise ValueError("Tiene que responder si o no")
+        break
+    except ValueError as e:
+        print(e)
+```
+- No poner los : para indicar que inicia una sentencia o loop
+```python
+	a=si
+	if not a == "si" #Como no hay dos punto el código no sabe en donde inicia la condicional.
+    print("Tiene que inscribirse")
+elif a == "si":
+    print("Bienvenido")
+```
+- No poner == para en el momento de comparar variables o constantes, puesto que si solo se pone uno el sistema compara bits y no los valores.
+	```python
+	a=si
+	if not a = "si": #Como no hay dos = el resulatdo va a cambiar.
+    print("Tiene que inscribirse")
+elif a == "si":
+    print("Bienvenido")
+```
 </p>
 </details>
 <details>
