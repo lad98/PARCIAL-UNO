@@ -179,6 +179,11 @@ En C++ disponemos de tres variantes de bucles:
 <summary>4.EJEMPLOS DE CÓDIGO</summary>  
 <p> - <b>Primer ejemplo</b>
 En este se ve el uso del tipo de variables y los operadoes aritméticos para calcular el área de un circulo.
+  
+![Texto alternativo](ejemplos$uso$c++/SEGUNDO.png)
+```cpp
+  +
+```
 - <b>Segundo ejemplo</b>
 En este ejemplo se usa el while para un programa para ingreso de zapatos, el while se usa para repetir el proceso de datos de referencia del zapato. 
 - <b>Tercer ejemplo</b>
