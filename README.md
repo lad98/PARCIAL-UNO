@@ -682,23 +682,23 @@ También existen los comparadores True y False, los cuales sirven para determina
 - **Condicionales:** Las condicionales son:  (if, elif y else) if se ejecuta si la condición es verdadera, por ejemplo:
 ```python
 if (x>y):
-print “Verdadero”
+print (“Verdadero”)
 ```
 el sistema imprimirá verdadero ya que x si es mayor que y.
 La condicional elif se usa si la primera condición es falsa pero se quiere comprobar otra condición, por ejemplo si decimos que: 
 ```python
 if (y>x) :
-print “Verdadero”
-elif (y<x): print “Segunda”
+print (“Verdadero”)
+elif (y<x): print (“Segunda”)
 ```
 El sistema imprimirá la palabra “Segunda”, ya que y es menor que x. Por último la condicional else se usa cuando ninguna de las condiciones es verdadera, por ejemplo si decimos que:   
 ```python
 if (y>x):
-print “Verdadero”
+print (“Verdadero”)
 elif (x<y):
-print “Segunda” 
+print (“Segunda”) 
 else: 
-print “Falso”
+print (“Falso”)
 ```
 el sistema imprimirá “falso”, ya que ninguna condición es verdadera.
   
@@ -711,6 +711,38 @@ print (numero)
 La salida serían los números 1,2,3,4,5 ya que el for lo que hace es que para cada número que se encuentre dentro de el conjunto (números) imprimirá ese mismo número
 
 El bucle (while) sirve para repetir algo mientras una condición sea verdadera, por ejemplo: 
+El bucle (while) sirve para repetir algo mientras una condición sea verdadera, por ejemplo: 
+```python
+precio = 5
+while (precio < 5)
+precio += 1
+print (“Está muy barato”)
+print (numero)
+```
+Esto hace que el sistema imprima “Está muy barato” si el precio es igual a 5.
+El precio va aumentando en 1 cada vez que se ejecuta gracias a “precio += 1”.
+**Funciones:** Las funciones sirven para reutilizar código fácilmente,dos ejemplos de funciones son (def, return).
+
+def sirve para definir funciones, por ejemplo tenemos que:
+```python
+def (contar)
+print (“1,2,3,4,5,6,7,8,9”)
+```python
+Lo que hace es que al momento de escribir contar en el código, el programa sabrá que tiene que imprimir “1,2,3,4,5,6,7,8,9”, ya que se definió “contar” como la función que tiene que ejecutar.
+
+La otra función (return) sirve para devolver un resultado, por ejemplo si tenemos que
+```python
+def multiplicar (x,y)
+return (x*y)
+```python
+si ponemos
+
+multiplicar 3,8
+
+el resultado que imprimirá el programa es 24, ya que se definió que si ponemos la palabra “multiplicar” el programa tiene que hacer el producto de 2 números
+
+
+
 
   
 </p>
