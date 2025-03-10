@@ -356,7 +356,7 @@ En C++ disponemos de tres variantes de bucles:
 En este se ve el uso del tipo de variables y los operadoes aritméticos para calcular el área de un circulo.
 
 ```cpp
-  +#include <iostream>
+  #include <iostream>
 
 using namespace std;
 
@@ -640,5 +640,66 @@ O también con python3 código.py
 
  </p>
 </details>
+<details>
+<summary>2. GUÍA DE USO	</summary>
+<p>	
+</p>
+</details>
+<details>
+<summary>3. DOCUMENTACIÓN TÉCNICA</summary>
+<p>	
+</p>
+</details>
+<details>
+<summary>4. EJEMPLOS DE CÓDIGO	</summary>
+<b> Ejemplo 1: </b>Otra forma es simplemente tener un bloque de código, y mencionar cuál línea es importante.
+
+```python
+    x = 10  
+    y = x + 5
+    print (y)
+```
+<b> Ejemplo 2: </b> Aqui se ve el uso de el condicional if y aparte el uso de operadores lógicos y aritméticos.
+```python
+N= int(input("Dame un número: "))
+x=N%3
+y=N%10
+if x==0 and y==7 :
+  print(f"El número {N} es curioso")
+else :
+  print(f"El número {N} no es curioso")
+```
+<b> Ejemplo 3: </b> Aqui se ve el uso de el condicional if dentro de un ciclo while para analizar que el valor ingresado a la variable sea el correcto y también cuenta el uso de operadores lógicos y aritméticos.
+```python
+from posixpath import extsep
+print("Buenas")
+while True:
+    try:
+        a = input("Usted cuenta con una cuenta de Netflix, responda si o no :")
+        if a != "si" and a != "no":
+            raise ValueError("Tiene que responder si o no")
+        break
+    except ValueError as e:
+        print(e)
+
+if not a == "si":
+    print("Tiene que inscribirse")
+elif a == "si":
+    print("Bienvenido")
+```
+</p>
+</details>
+<details>
+<summary>5. ERRORES COMUNES</summary>
+<p> 	
+</p>
+</details>
+<details>
+<summary>6. CONTRIBUCIONES</summary>
+<p> Una persona puede aportar al proyecto notificando errores del sistema, formas de hacerlo más simple y que consuma menos recursos o ampliar el código para obtener valores más precisos.
+	
+</p>
+</details>
+
 
 
