@@ -395,7 +395,7 @@ std:: cout << "Deme un número entero";
 std:: cin >> c;
 // Aqui hay un error puesto que la variable c se declaro como booleanos se tendria que guardar en a
 ```
-- <b> No declarar en using namespace std y no esoecificarlo línea por línea </b>
+- <b> No declarar en using namespace std o no esoecificarlo línea por línea </b>
 ```cpp
 #include <iostream>
 #include <string>
