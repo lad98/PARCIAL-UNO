@@ -179,15 +179,161 @@ En C++ disponemos de tres variantes de bucles:
 <summary>4.EJEMPLOS DE CÓDIGO</summary>  
 <p> - <b>Primer ejemplo</b>
 En este se ve el uso del tipo de variables y los operadoes aritméticos para calcular el área de un circulo.
-  
-![Texto alternativo](ejemplos$uso$c++/SEGUNDO.png)
+
 ```cpp
-  +
+  +#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    cout<< "PROGRAMACION AREA DE UN CIRCULO" <<endl;
+    
+    float radio; 
+   float PI=3.1416;
+    
+    cout<< "Digite el valor del radio "<< endl;
+    cin>>radio;
+  
+    system("cls");
+     
+    cout<< "CIRCULO" <<endl<<endl;
+    cout<<"Perimetro:  "<<radio*PI <<endl<<endl;
+    
+    cout<<"Gracias por digitar su informacion"<<endl<<endl;
+    cout<<"Hecho por Laura Jimenez M."<<endl<<endl;
+    
+    
+    system("pause");
+    return EXIT_SUCCESS;
+}
+    
 ```
 - <b>Segundo ejemplo</b>
-En este ejemplo se usa el while para un programa para ingreso de zapatos, el while se usa para repetir el proceso de datos de referencia del zapato. 
+En este ejemplo se usa el while para un programa para ingreso de zapatos, el while se usa para repetir el proceso de datos de referencia del zapato.
+```cpp
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  int referencia_del_zapato;
+  char descripcion_del_zapato[100],respuesta;
+  int talla,costo;
+  
+  cout << "*************************************" << endl;
+  cout << "ADMISNISTRACION DE VENTA DE ZAPATOS" << endl;
+   cout << "*************************************" << endl;
+  cout << "QUIERE INGRESAR UN ZAPATO AL PROGRAMA S/N: "<<endl;
+  cin>>respuesta;
+  while(respuesta=='S')
+  {
+      cout << "Digite la referencia del zapato..." << endl;
+  cin >> referencia_del_zapato;
+  cin.ignore (256, '\n');
+  cout << "Digite la descripcion del zapato..." << endl;
+  cin.getline (descripcion_del_zapato, 100);
+  cout << "Digite la talla del zapato..." << endl;
+  cin >> talla;
+  cout << "QUIERE INGRESAR OTRO ZAPATO AL PROGRAMA S/N: " <<endl;
+  cin>>respuesta;
+  }
+   cout << "*************************************" << endl;
+  cout << "GRACIAS POR DIGITAR" << endl;
+  cout << "HECHO POR LAURA JIMENEZ M" << endl;
+ cout << "*************************************" << endl;
+  system ("pause");
+  return EXIT_SUCCESS;
+ 
+}
+
+```
 - <b>Tercer ejemplo</b>
 En este ejemplo se usa el IF y el SWITCH para clasificar las utilidades que pueden los zapatos, por otra parte este ejercicio se ven el uso de diversos tipos de variables y de operaciones.
+```cpp
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  int referencia_del_zapato;
+  char descripcion_del_zapato[100];
+  int talla;
+  char disponibilidad;
+  int SW,costo, utilidad;
+  int precio_venta;
+  int cantidad_de_zapatos;
+
+ cout << "*************************************" << endl;
+  cout << "ADMISNISTRACION DE VENTA DE ZAPATOS" << endl;
+   cout << "*************************************" << endl;
+  cout << "Digite la referencia del zapato..." << endl;
+  cin >> referencia_del_zapato;
+  cin.ignore (256, '\n');
+  cout << "Digite la descripcion del zapato..." << endl;
+  cin.getline (descripcion_del_zapato, 100);
+  cout << "Digite la talla del zapato..." << endl;
+  cin >> talla;
+  cout << "Digite S o N segun la disponibilidad del zapato..." << endl <<
+    endl;
+  cin >> disponibilidad;
+  cout << "Digite la cantidad de zapatos que estan disponibles..." << endl;
+  cin >> cantidad_de_zapatos;
+  cout << "Digite el costo del zapato por unidad..." << endl;
+  cin >> costo;
+  cout << "Digite el precio de venta del zapato por unidad..." << endl;
+  cin >> precio_venta;
+  
+  system ("cls");
+ cout << "*************************************" << endl;
+ cout << "LOS DATOS REGISTRADOS SON LOS SIGUIENTES" << endl<<endl;
+ 
+  cout << "La referencia del zapato es:" << referencia_del_zapato << endl;
+  cout << "La descripcion del zapato es:" << descripcion_del_zapato << endl;
+  cout << "La talla del zapato es:" << talla << endl;
+  cout << "La disponibilidad del zapato es:" << disponibilidad << endl;
+  cout << "La cantidad de zapatos son:" << cantidad_de_zapatos << endl;
+  cout << "El costo del zapato por unidad es:" << costo << endl;
+  if(costo<=30000){SW=0;}
+
+     if(costo>30000&&costo<=60000){SW=1;}
+   
+     else if(costo>60000){SW=2;}
+    
+     switch(SW)
+     {
+         case 0:
+          cout<<"TIPO: A"<<endl;
+         cout << "Porcentaje de utilidad del 50%" <<endl;
+         break;
+         case 1:
+         cout<<"TIPO: B"<<endl;
+         cout << "Porcentaje de utilidad del 40%" <<endl;
+          break;
+          case 2:
+          cout<<"TIPO: C"<<endl;
+         cout << "Porcentaje de utilidad del 30%" <<endl;
+         break;
+         
+     }
+ 
+  cout << "El costo total de "<<cantidad_de_zapatos << "  zapatos es:" << cantidad_de_zapatos*costo << endl;
+  cout << "El precio de venta del zapato por unidad es:" << precio_venta << endl;
+   cout << "El precio total de  "<<cantidad_de_zapatos <<"  zapatos es:" << cantidad_de_zapatos*precio_venta << endl;
+ utilidad=precio_venta -costo;
+ cout << "La utilidad por unidad:" << utilidad << endl;
+  cout << "La utilidad total:" << utilidad*cantidad_de_zapatos << endl;
+  
+  cout << "*************************************" << endl;
+  cout << "GRACIAS POR DIGITAR" << endl;
+  cout << "HECHO POR LAURA JIMENEZ M" << endl;
+ cout << "*************************************" << endl;
+  system ("pause");
+  return EXIT_SUCCESS;
+ 
+}
+
+```
 </p>
 </details>
 <details>
