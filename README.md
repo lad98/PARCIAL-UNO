@@ -727,15 +727,15 @@ def sirve para definir funciones, por ejemplo tenemos que:
 ```python
 def (contar)
 print (“1,2,3,4,5,6,7,8,9”)
-```python
+```
 Lo que hace es que al momento de escribir contar en el código, el programa sabrá que tiene que imprimir “1,2,3,4,5,6,7,8,9”, ya que se definió “contar” como la función que tiene que ejecutar.
 
 La otra función (return) sirve para devolver un resultado, por ejemplo si tenemos que
 ```python
 def multiplicar (x,y)
 return (x*y)
-```python
-si ponemos
+```
+si ponemos:
 
 multiplicar 3,8
 
