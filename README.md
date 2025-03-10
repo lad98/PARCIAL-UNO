@@ -48,9 +48,13 @@ La estructura de datos “int” es para evaluar valores enteros, y se usa ya qu
 Condicionales
 
 El loop "While"que se usa para verificar la información ingresada y evitar que el sistematermine si el valor no es correcto.
+
 La condicional “if” se usa para separar un grupo de valores de otros, en este caso la condicional evalúa únicamente los valores menores o iguales a 10.000.
+
 La condicional “elif” evalúa únicamente los casos donde el valor es mayor a 10.000 y menor a 50.000.
+
 Por último la condicional “else” evalúa todos los demás casos, siendo este apoyados por if anidados.
+
 Sistema de redondeo: Ya que no se pueden pagar monedas en decimales, el “int(round)” cumple la función de que el sistema solo imprima valores enteros y no se vaya por los decimales.
 
 
