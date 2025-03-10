@@ -627,7 +627,8 @@ std ::cin >> c;
 5. Escribir el código 
 5. Ejecutar el código con el comando python código.py
 O también con python3 código.py
-6. Se mostrará el resultado 
+6. Se mostrará el resultado
+   
 <b>Linux </b>
 
 1. Abrir la terminal 
