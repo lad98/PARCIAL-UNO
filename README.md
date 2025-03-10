@@ -177,7 +177,7 @@ En C++ disponemos de tres variantes de bucles:
 </details>
 <details>
 <summary>4.EJEMPLOS DE CÓDIGO</summary>  
-<p> - <b>Primer ejemplo</b>
+<p> - <b>Primer ejemplo: </b>
 En este se ve el uso del tipo de variables y los operadoes aritméticos para calcular el área de un circulo.
 
 ```cpp
@@ -209,7 +209,7 @@ int main ()
 }
     
 ```
-- <b>Segundo ejemplo</b>
+- <b>Segundo ejemplo: </b>
 En este ejemplo se usa el while para un programa para ingreso de zapatos, el while se usa para repetir el proceso de datos de referencia del zapato.
 ```cpp
 #include <iostream>
@@ -248,7 +248,7 @@ int main ()
 }
 
 ```
-- <b>Tercer ejemplo</b>
+- <b>Tercer ejemplo: </b>
 En este ejemplo se usa el IF y el SWITCH para clasificar las utilidades que pueden los zapatos, por otra parte este ejercicio se ven el uso de diversos tipos de variables y de operaciones.
 ```cpp
 #include <iostream>
