@@ -160,7 +160,7 @@ En C++ podemos distinguir diferentes tipos:
 - Simple: if
 - Ampliada: if - else
 - Anidada: if – else if - … - else
-- Multisalida: switch
+- Multisalida: switch (Esta es epecial poqre solo sirve para igualdades y se recomienda maximo para 5 opciones)
 
 <b>Estructuras iterativas</b>
 
@@ -176,8 +176,13 @@ En C++ disponemos de tres variantes de bucles:
 </p>
 </details>
 <details>
-<summary> EJEMPLOS DE CÓDIGO</summary>  
-<p>
+<summary>4.EJEMPLOS DE CÓDIGO</summary>  
+<p> - <b>Primer ejemplo</b>
+En este se ve el uso del tipo de variables y los operadoes aritméticos para calcular el área de un circulo.
+- <b>Segundo ejemplo</b>
+En este ejemplo se usa el while para un programa para ingreso de zapatos, el while se usa para repetir el proceso de datos de referencia del zapato. 
+- <b>Tercer ejemplo</b>
+En este ejemplo se usa el IF y el SWITCH para clasificar las utilidades que pueden los zapatos, por otra parte este ejercicio se ven el uso de diversos tipos de variables y de operaciones.
 </p>
 </details>
 <details>
