@@ -4,9 +4,9 @@ int S;
 int main(){
 std::cout << "Ingrese el total de sus ingresos : ";
 std::cin >>S;
-    // Ciclo para asegurar que la entrada sea un número válido
+    // Ciclo para asegurar que la entrada sea un número válido, numero positivo 
 while (S<0) {
-            // Se produjo un error, mostramos el mensaje
+            // Si el número no es válido se muestra un error 
         std::cout << "Error: entrada no válida. Intenta nuevamente con un valor positivo.";
         std::cout << "Ingrese el total de sus ingresos : ";
         std::cin >>S;
